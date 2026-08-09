@@ -235,6 +235,7 @@ export abstract class SpineBase<
      * @param dt {number} Delta time. Time by which the animation should be updated
      */
     update(dt: number) {
+        if (!this.spineData) return;
         // Limit delta value to avoid animation jumps
         const delayLimit = this.delayLimit;
         const version = detectSpineVersion(this.spineData.version || this.spineData.spine.version);
