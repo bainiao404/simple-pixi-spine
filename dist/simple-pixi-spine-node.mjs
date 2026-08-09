@@ -1,6 +1,6 @@
 /*!
  * simple-pixi-spine - v4.0.4
- * Compiled Thu, 06 Aug 2026 09:30:12 UTC
+ * Compiled Sun, 09 Aug 2026 10:11:10 UTC
  *
  * Integrated spine-pixi runtime with SimplePixiSpine wrapper.
  * All rights reserved.
@@ -1430,6 +1430,8 @@ var _SpineBase = class _SpineBase extends Container {
    * @param dt {number} Delta time. Time by which the animation should be updated
    */
   update(dt) {
+    if (!this.spineData)
+      return;
     const delayLimit = this.delayLimit;
     const version = detectSpineVersion(this.spineData.version || this.spineData.spine.version);
     if (dt > delayLimit)
