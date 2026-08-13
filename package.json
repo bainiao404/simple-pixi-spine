@@ -1,6 +1,6 @@
 {
     "name": "simple-pixi-spine",
-    "version": "0.1.7-pixi8",
+    "version": "0.1.8-pixi8",
     "description": "Unified spine-pixi runtime with SimplePixiSpine wrapper built using Esbuild",
     "main": "./dist/simple-pixi-spine.js",
     "module": "./dist/simple-pixi-spine.mjs",
@@ -25,7 +25,7 @@
         "pixi.js": "^8.2.3"
     },
     "devDependencies": {
-        "@esotericsoftware/spine-pixi-v8": "^4.2.53",
+        "@esotericsoftware/spine-pixi-v8": "~4.2.119",
         "esbuild": "^0.19.11",
         "typescript": "5.4.2"
     },
